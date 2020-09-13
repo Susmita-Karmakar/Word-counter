@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word counter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        background: #20002c;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    }
+
+</style>
+
+<body>
+    <nav class="navbar" style="background-color: black;opacity: 0.5;">
+        <nav class="navbar-brand text-white">Word counter</nav>
+    </nav>
+    <div class="container mt-5">
+        <div class="row" style="">
+            <div class='col-md-6'>
+                <textarea class="from-control col-md-12" rows="18" id="user_text"></textarea><br>
+                <div style="width: 150px;margin: auto;">
+                   <button class="btn  btn-lg btn-primary mt-2" id="status">show status</button> 
+                </div>
+                
+            </div>
+            <div class="col-md-6" style="justify-content: center;color: white;">
+                <h3 class="mt-4 text-md-center p-4" style="border-bottom:  2px white solid">Number of words and characters</h3>
+                <div class="row mt-5" style="color: black">
+                    <div class='col-md-6 text-md-center p-4' >
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Words</h4>
+                                <h1 id='words'>0</h1>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class='col-md-6 text-md-center p-4' >
+                        <div class="card">
+                            <div class="card-body">
+                                <h4>Characters</h4>
+                                <h1 id='character'>0</h1>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                
+            </div>
+            
+
+        </div>
+    </div>
+    <script src="app.js"> </script>
+</body>
+
+
+</html>
